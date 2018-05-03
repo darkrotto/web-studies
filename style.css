@@ -1,0 +1,299 @@
+/* ---- CSS Reset ----*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* ---- General Rules ----*/
+
+h1, h2, h3, h4, h5, h6, p, a{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(235, 235, 235)
+}
+
+
+/* ---- Global Navigation ----*/
+
+#globalnav {
+    position: fixed;
+    display: block;
+    background-color: rgba(201, 28, 43, 0.75);
+    width: 100%;
+    z-index: 9999;
+    height: 4.5em;
+}
+
+#globalnav--content {
+    margin: 0 auto 0 auto;
+    height: 45px;
+    text-align: left;
+    max-width: 1024px;
+}
+
+#globalnav__content--ul {
+    margin: 0;
+    padding: 0;
+    height: 72px;
+}
+
+.globalnav__content__ul--li {
+    display: inline-block;
+    vertical-align: middle;
+    list-style-type: none;
+
+}
+
+.globalnav__content__ul__li--text {
+    padding: 2.2em 0 0 0;
+    margin: 0 1em 0 1em;
+}
+
+.globalnav__content__ul__li--text a{
+    color: #ffffff;
+    text-decoration-line: none;
+}
+
+.globalnav__content__ul__li--text a:hover{
+    color: peru;
+}
+
+#globalnav__content--logo {
+    height: 4.5em;
+    padding: 0 1em 0 1em;
+    background-color: #ffffff;
+    margin: 0 25em 0 0;
+}
+
+@media only screen and (max-width:720px) {
+    #globalnav {
+        position: fixed;
+        display: block;
+        z-index: 9999;
+        height: 3em;        
+
+    }
+
+    #globalnav--content {
+        margin: 0 0 0 0;
+        max-width: 720px;
+    }
+
+    #globalnav__content--ul {       
+        width: 100%;
+    }
+
+    .globalnav__content__ul--li {
+        display: block;
+        text-align: left;
+        
+    }
+
+    .globalnav__content__ul__li--text {
+        margin: 0;
+        padding: 1em 0 0.75em 1em;
+        background-color: rgba(201, 28, 43, 0.20)
+
+    }
+
+    #globalnav__content--logo{
+        display: block;
+        margin: 0 auto 0 auto;
+        height: 3em;
+        background-color: #ffffff;
+    }
+}
+
+/* ---- General Container Rules ----*/
+
+.centercontainer {
+    margin: 0 auto 0 auto;
+    text-align: left;
+    width: 1024px;
+    
+}
+
+@media only screen and (max-width:720px) {
+    .centercontainer {
+        width:100% ;
+    }
+}
+
+/* ---- Main Container ----*/
+
+#maincontainer {
+    background-color: rgb(32, 32, 32);
+    height: 50em;
+}
+
+
+/* ---- Gallery ----*/
+
+#gallery {
+    background-color: rgb(255, 255, 255)
+
+}
+
+.gallery--contentbox {
+    float: left;
+    width: 1024px;
+    border-radius: 10px;
+    background-color: darksalmon;
+    margin: 0 0 3px 0;
+    overflow: hidden;
+   
+}
+
+.gallery__contentbox--img {
+    float: left;
+    height: 350px;    
+    background-color: dodgerblue;
+    margin: 0 15px 0 0;
+}
+
+.gallery__contentbox--info {
+    float: left;
+    height: 270px;
+    vertical-align: top;
+    max-width: 500px;
+
+}
+
+.gallery__contentbox--info h1, .gallery__contentbox--info h2, .gallery__contentbox--info p {
+ color: #FFFFFF;
+
+}
+
+.gallery__contentbox--info h1{
+    font-size: 28px;
+    margin-top: 15px;
+}
+
+.gallery__contentbox--info h2{
+    font-size: 14px;
+
+}
+.gallery__contentbox--info p{
+    display: inline-block;
+    font-size: 11px;
+    margin: 10px 0 0 0;
+
+}
+
+.gallery__contentblock--choices{
+    float: left;
+    margin: 0.5em 0 0 0.5em;
+    background-color: darkcyan;
+    width: 150px;
+    height: 50px;
+}
+
+.gallery__contentblock--choices p{
+   display: inline-block;
+   padding: 13px 0 0 10px;
+
+}
+
+.gallery__contentblock--choices img{
+    display: inline-block;
+    width: 50px;
+    height:50px;
+ 
+ }
+
+ @media only screen and (max-width:720px) {
+    .gallery--contentbox {
+        width: 100%;
+
+    }
+    .gallery__contentbox--img {
+        width: 100%;
+        height: unset;
+        margin: 0 15px 0 0;
+        
+    }
+
+    .gallery__contentbox--info {
+        width: 100%;
+        max-width: none;
+        height: unset;
+    }
+
+    .gallery__contentbox--info p{
+        padding: 0 10px 0 10px;
+    }
+
+    .gallery__contentbox--info h1, .gallery__contentbox--info h2    {
+        padding: 0 10px 0 10px;
+    }
+
+    .gallery__contentblock--choices {
+        margin: 10px 5px 10px 10px;
+
+    }
+
+ }
+
+
+
+ #footer{
+     float: left;
+     width: 100%;
+     height: 450px;
+     background-color: rgb(138, 138, 138);
+     margin: 40px 0 0 0;
+ }
+
+ .footer__content--box{
+     float: left;
+     width: 330px;
+     height: 400px;
+     margin: 50px 0 0 0;
+     overflow: hidden;
+ }
+
+ .footer__content--box h1,  .footer__content--box h2,  .footer__content--box p {
+    
+    color: rgb(34, 34, 34);
+}
+
+.footer__content--box a {
+    color: rgb(231, 250, 61);
+    padding: 0 0 8px 0;
+    display: block;
+    text-decoration: none;
+}
+
+.footer__content--box a:hover{
+    color: rgb(243, 241, 217);
+}
+
+@media only screen and (max-width:720px)
+{
+
+    #footer{
+        height: unset;
+    }
+    .footer__content--box{
+        float: left;
+        width: 100%;
+        height: 150px;
+        margin: 50px 0 0 0;
+        background-color: rgb(138, 138, 138);
+        overflow: hidden;
+    }
+
+    .footer__content--box h1,  .footer__content--box h2,  .footer__content--box p,  .footer__content--box a{
+        padding: 0 0 8px 15px;
+
+
+    
+    }
+}
